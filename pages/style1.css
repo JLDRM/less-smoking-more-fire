@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "Clan-Bold";
+  src: url(../assets/fonts/ClanPro-Bold.otf);
+}
+@font-face {
+  font-family: "Clan-Book";
+  src: url(../assets/fonts/ClanPro-Book.otf);
+}
+
+body {
+  max-height: 100vh;
+  height: 100vh;
+  margin: 0 23px;
+  background-image: linear-gradient(
+    rgb(44, 134, 67) 0%,
+    rgb(75, 181, 84) 30.08%,
+    rgb(87, 203, 106) 45.07%,
+    rgb(170, 223, 182) 62.87%,
+    rgb(190, 237, 190) 74.13%,
+    rgb(226, 232, 225) 79.38%,
+    rgb(226, 232, 225) 100%
+  );
+  font-family: Clan-Book;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-family: Clan-Bold;
+}
+
+.description-container {
+  max-height: 31vh;
+  word-break: break-word;
+  overflow: scroll;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.video-container {
+  margin: 5px 0 20px;
+}
+
+.video-container video {
+  max-width: 100%;
+  min-height: 40vh;
+  object-fit: cover;
+  box-shadow: 0px 10px 30px -9px rgba(17, 17, 17, 1);
+}
+
+.arrow-next img {
+  transform: rotate(-45deg);
+  width: 43px;
+  height: 43px;
+  max-width: fit-content;
+  position: fixed;
+  bottom: 23px;
+  right: 30px;
+}
