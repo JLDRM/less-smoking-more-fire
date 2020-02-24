@@ -10,6 +10,7 @@
 body {
   max-height: 100vh;
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   margin:0 23px;
   background-image: linear-gradient(rgb(238, 195, 195), rgb(243, 135, 135), rgb(179, 60, 60));
   font-family: Clan-Book;
@@ -22,7 +23,7 @@ h1{
 }
 
 .description-container{
-  max-height: 31vh;
+  max-height: calc(var(--vh, 1vh) * 31);
   word-break: break-word;
   overflow: scroll;
 }
@@ -34,12 +35,11 @@ p{
 
 .video-container{
   margin: 5px 0 20px;
-  
 }
 
 .video-container video {
   max-width: 100%;
-  min-height: 40vh;
+  min-height: calc(var(--vh, 1vh) * 40);
   object-fit: cover;
   box-shadow: 0px 10px 30px -9px rgba(17,17,17,1);
 }
